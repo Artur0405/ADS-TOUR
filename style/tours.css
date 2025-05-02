@@ -1,0 +1,185 @@
+/* Общая структура */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #f0f0f0;
+}
+
+header {
+  background-color: #4682b4;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+#back-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4682b4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#back-button:hover {
+  background-color: #5a9bd3;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.scroll-wrapper {
+  flex: 1;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+#tours-container {
+  display: flex;
+  gap: 20px;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Карточка тура */
+.tour {
+  flex: 0 0 auto;
+  height: 100%;
+  aspect-ratio: 3 / 5;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 15px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  scroll-snap-align: start;
+  cursor: pointer;
+}
+
+.tour img {
+  width: 100%;
+  height: auto;
+  max-height: 40%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.tour h2 {
+  font-size: 22px;
+  margin: 10px 0 5px;
+}
+
+.tour p {
+  font-size: 16px;
+  flex-grow: 1;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Модальное окно */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+}
+
+/* Контент модального окна */
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 66vw;
+  height: 66vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+}
+
+/* Галерея */
+.modal-gallery {
+  display: flex;
+  gap: 10px;
+  margin: 15px 0;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+.modal-gallery img {
+  height: calc(66vh / 3);
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+/* Описание */
+#modal-description {
+  font-size: 16px;
+  margin: 0;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+/* Нижняя панель модалки с кнопкой */
+.modal-footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+/* Кнопка перехода на отдельную страницу */
+.more-details-button {
+  padding: 10px 20px;
+  background-color: #4682b4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.more-details-button:hover {
+  background-color: #5a9bd3;
+}

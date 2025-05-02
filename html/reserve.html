@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book</title>
+  <link rel="stylesheet" href="../style/reserve.css" />
+</head>
+<body>
+  <header>
+    <h1>Book: <span id="selected-tour">...</span></h1>
+    <a href="booking.html"><button id="back-button">back to tours</button></a>
+  </header>
+
+  <main>
+    <form action="https://formspree.io/f/xeoallzd" method="POST">
+      <input type="hidden" name="tour" id="tour-name" />
+
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="Email" required />
+
+      <label for="phone">Phone:</label>
+      <input type="text" id="phone" name="phone" required />
+
+      <label for="date">Tour Date:</label>
+      <input type="date" id="date" name="date" required />
+
+      <label for="message">Additional message:</label>
+      <textarea id="message" name="message" rows="4"></textarea>
+
+      <button type="submit">Send Request</button>
+      <p id="form-message" style="margin-top: 15px; font-weight: bold;"></p>
+    </form>
+  </main>
+
+  <footer>
+    <p>© 2025 LOTUS & APRICOTE All rights reserved.</p>
+  </footer>
+
+  <script src="../js/reserve.js"></script>
+</body>
+</html>

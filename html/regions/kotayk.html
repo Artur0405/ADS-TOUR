@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LOTUS & APRICOTE - Region</title>
+  <link rel="stylesheet" href="../../style/regions.css" />
+  <link rel="stylesheet" href="../../style/region_modal.css" />
+</head>
+<body>
+  <header>
+    <div class="button-column">
+      <a href="../main_page.html"><button id="back-home-button">Back to Home</button></a>
+      <a href="../map.html"><button id="back-map-button">Back to Map</button></a>
+    </div>
+    <h1 id="region-title">Kotayk</h1>
+  </header>
+
+  <main id="region-container">
+    <section class="region-description">
+      <h2>About the Region</h2>
+      <p id="region-description">
+        Kotayk is home to some of Armenia’s most iconic sites, including Garni Temple and Geghard Monastery.
+      </p>
+    </section>
+
+    <section class="region-gallery">
+      <h2>Places in Aragatsotn</h2>
+      <div class="image-container">
+        <div class="place-card">
+          <img src="../../images/The_Symphony_of_Stones_1.jpg" alt="The Symphony of Stones" data-title="The Symphony of Stones" data-description="The Symphony of Stones is a natural geological wonder located near the Garni Temple in Armenia. It is a unique formation of basalt columns, created by volcanic activity millions of years ago. The towering, symmetrical stone structures resemble an organ, giving the site its musical name. The area offers breathtaking views of the surrounding landscape, with the columns creating a striking contrast against the lush greenery and the nearby Azat River. The Symphony of Stones is a popular destination for nature lovers and those interested in Armenia’s geological and natural beauty." data-gallery='["../../images/The_Symphony_of_Stones_1.jpg","../../images/The_Symphony_of_Stones_2.jpg","../../images/The_Symphony_of_Stones_3.jpg","../../images/The_Symphony_of_Stones_4.jpg","../../images/The_Symphony_of_Stones_5.jpg","../../images/The_Symphony_of_Stones_6.jpg"]'>
+          <p class="place-name">The Symphony of Stones</p>
+        </div>
+    
+        <div class="place-card">
+          <img src="../../images/Kecharis_1.jpg" alt="Kecharis" data-title="Kecharis" data-description="Kecharis is a medieval monastic complex located in the town of Tsaghkadzor, Armenia. Dating back to the 11th century, the complex includes several churches, chapels, and a khachkar (cross-stone), all built in the characteristic Armenian architectural style. Kecharis was an important religious and cultural center during the Middle Ages, and its churches were often used as a place of learning and spiritual retreat. Surrounded by the scenic mountains of the region, Kecharis offers visitors a peaceful atmosphere and an opportunity to explore Armenia’s rich history and architectural heritage." data-gallery='["../../images/Kecharis_1.jpg","../../images/Kecharis_2.jpg","../../images/Kecharis_3.jpg"]'>
+          <p class="place-name">Kecharis</p>
+        </div>
+    
+        <div class="place-card">
+          <img src="../../images/The_Garni_Temple_1.jpg" alt="The Garni Temple" data-title="The Garni Temple " data-description="The Garni Temple is a stunning example of ancient Armenian architecture, located in the Kotayk region. Built in the 1st century AD, it is the only pagan temple remaining in Armenia and one of the best-preserved Greco-Roman structures in the region. The temple, dedicated to the sun god Mihr, features impressive columns and intricate stonework. Situated on a cliff, it offers beautiful views of the surrounding valley and the nearby Azat River. Today, Garni Temple is a popular historical and cultural landmark, attracting visitors interested in Armenia’s rich past and architectural heritage." data-gallery='["../../images/The_Garni_Temple_1.jpg","../../images/The_Garni_Temple_2.jpg","../../images/The_Garni_Temple_3.jpg","../../images/The_Garni_Temple_4.jpg","../../images/The_Garni_Temple_5.jpg","../../images/The_Garni_Temple_6.jpg"]'>
+          <p class="place-name">The Garni Temple</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span id="close-modal" class="close">&times;</span>
+      <h2 id="modal-title"></h2>
+      <div id="modal-gallery" class="modal-gallery"></div>
+      <p id="modal-description"></p>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 LOTUS & APRICOTE. All rights reserved.</p>
+  </footer>
+
+  <script src="../../js/region_modal.js"></script>
+</body>
+</html>

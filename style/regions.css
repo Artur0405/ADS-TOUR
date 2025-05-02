@@ -1,0 +1,98 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+
+header {
+  background-color: #4682b4;
+  color: white;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.button-column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#back-home-button, #back-map-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4682b4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#back-home-button:hover, #back-map-button:hover {
+  background-color: #5a9bd3;
+}
+
+main {
+  flex-grow: 1;
+  padding: 20px;
+  overflow-y: auto;
+  max-height: calc(100vh - 120px); /* Учитывает высоту header и footer */
+}
+
+.region-description {
+  text-align: center;
+  padding: 20px;
+}
+
+.region-gallery {
+  text-align: center;
+}
+
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  padding: 20px;
+}
+
+/* 👇 Новый блок: карточка для картинки + подпись */
+.place-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.place-card:hover {
+  transform: scale(1.02);
+}
+
+.place-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Подпись под картинкой */
+.place-name {
+  margin-top: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  color: #444;
+  text-align: center;
+}
