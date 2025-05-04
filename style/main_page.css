@@ -2,7 +2,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-image: url('../images/background.jpg');
+  background-image: url('../images/Yerevan_night.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -13,7 +13,7 @@ body {
 }
 
 header {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.4);
   color: white;
   padding: 20px;
   text-align: center;
@@ -32,22 +32,24 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: -300px;
   gap: 20px;
 }
 
 button {
-  background-color: #4682b4;
+  background-color: #190000;
+  height: 70px;
   color: white;
   padding: 15px 25px;
-  font-size: 18px;
+  font-size: 28px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  width: 250px;
+  width: 320px;
 }
 
 button:hover {
-  background-color: #5a9bd3;
+  background-color: rgba(25, 0, 0, 0.8);
 }
 
 footer {

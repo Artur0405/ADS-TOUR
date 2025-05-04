@@ -6,41 +6,72 @@
             transition: fill 0.3s ease-in-out; /* Анимация при изменении цвета */
         }
         .region-1 {
-            fill:rgba(206, 212, 43, 0.81); 
+            fill:rgb(149, 211, 54); 
         }
         .region-2 {
-            fill:rgb(203, 149, 78); 
+            fill:rgb(222, 205, 78); 
         }
         .region-3 {
-            fill: #ff9999; 
+            fill:rgb(226, 219, 162); 
         }
         .region-4 {
-            fill:rgb(255, 143, 143); 
+            fill:rgb(255, 157, 0); 
         }
         .region-5 {
-            fill: #ff9999; 
+            fill:rgb(110, 184, 99); 
         }
         .region-6 {
-            fill: #99ccff; 
+            fill:rgb(64, 228, 151); 
         }
         .region-7 {
-            fill:rgb(14, 133, 41); 
+            fill:rgb(134, 205, 150); 
         }
         .region-8 {
             fill: #99ccff; 
         }
         .region-9 {
-            fill:rgb(55, 38, 38); 
+            fill:rgb(223, 192, 226); 
         }
         .region-10 {
             fill:rgb(38, 175, 52); 
         }
         .region-11 {
-            fill:rgb(89, 48, 1); 
+            fill:rgb(221, 172, 116); 
         }
-        .region:hover {
-            fill:rgb(0, 225, 245); 
+        .region-1:hover {
+            fill: rgb(85, 138, 39);
         }
+        .region-2:hover {
+            fill: rgb(158, 145, 43);
+        }
+        .region-3:hover {
+            fill: rgb(160, 153, 112);
+        }
+        .region-4:hover {
+            fill: rgb(191, 102, 0);
+        }
+        .region-5:hover {
+            fill: rgb(70, 135, 62);
+        }
+        .region-6:hover {
+            fill: rgb(20, 158, 101);
+        }
+        .region-7:hover {
+            fill: rgb(94, 145, 110);
+        }
+        .region-8:hover {
+            fill: #6699cc;
+        }
+        .region-9:hover {
+            fill: rgb(170, 130, 176);
+        }
+        .region-10:hover {
+            fill: rgb(20, 115, 30);
+        }
+        .region-11:hover {
+            fill: rgb(150, 112, 76);
+        }
+
     </style>
     
     <!-- Шаблон путей для регионов с примерами -->
@@ -92,8 +123,8 @@
         246,38 244,36 243,36 241,34 239,34 238,33 237,34 236,33 234,33 233,34 231,32 230,32 224,26 223,26 222,25 221,25 
         218,22 217,22 216,21 214,21 212,19 209,19 208,18 207,18 205,16 204,16 203,15 202,15 201,16 200,15 199,15 196,12 
         193,12 191,10 190,10 189,9 188,9 187,8 185,8 184,7 Z" 
-      fill="rgb(4, 98, 221)"
-      stroke="rgb(0, 42, 96)" 
+      fill="rgb(54, 105, 213)"
+      stroke="rgb(38, 73, 148)" 
       stroke-width="2" 
       opacity="0.7"
       transform="translate(210,630) scale(0.9)"/>
