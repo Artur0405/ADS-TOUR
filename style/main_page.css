@@ -59,3 +59,37 @@ footer {
   text-align: center;
   margin-top: auto;
 }
+
+@media (max-width: 768px) {
+  body {
+    background-attachment: scroll;
+    padding: 10px;
+  }
+
+  main {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .button-container {
+    margin-top: 0;
+    gap: 15px;
+  }
+
+  .btn {
+    width: 90%;
+    font-size: 22px;
+    height: auto;
+    padding: 12px 20px;
+  }
+
+  header {
+    padding: 15px;
+    font-size: 20px;
+  }
+
+  footer {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
