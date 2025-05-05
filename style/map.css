@@ -2,7 +2,10 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f0f0f0;
+  background-image: url('../images/second_background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   color: #333;
   display: flex;
   flex-direction: column;
@@ -57,4 +60,31 @@ footer {
   padding: 10px;
   text-align: center;
   position: relative;
+}
+
+#region-preview {
+  position: absolute;
+  top: 100px;
+  right: 30px;
+  width: 280px;
+  height: 180px;
+  background-color: white;
+  border: 2px solid #ccc;
+  display: none;
+  z-index: 999;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+#region-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+main {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-image 0.5s ease-in-out;
 }
