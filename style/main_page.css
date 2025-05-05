@@ -86,9 +86,11 @@ footer {
 
   header {
     font-size: 20px;
+    width: 100vh;
   }
 
   footer {
     font-size: 14px;
+    width: 100vh;
   }
 }
