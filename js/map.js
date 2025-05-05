@@ -12,19 +12,45 @@ const regionImages = {
     "region-11": "../images/Yerevan_day.webp"
   };
   
-  // Предзагрузка изображений
+  const regionLinks = {
+    "region-1": "../html/regions/aragatsotn.html",
+    "region-2": "../html/regions/ararat.html",
+    "region-3": "../html/regions/armavir.html",
+    "region-4": "../html/regions/erevan.html",
+    "region-5": "../html/regions/gegharkunik.html",
+    "region-6": "../html/regions/kotayk.html",
+    "region-7": "../html/regions/lori.html",
+    "region-8": "../html/regions/shirak.html",
+    "region-9": "../html/regions/syunik.html",
+    "region-10": "../html/regions/tavush.html",
+    "region-11": "../html/regions/vayots_dzor.html"
+  };
+  
+  // Предзагрузка всех изображений
   Object.values(regionImages).forEach(src => {
     const img = new Image();
     img.src = src;
   });
+  const defaultImage = "../images/second_background.jpg";
+  const bg1 = document.getElementById("bg1");
+  const bg2 = document.getElementById("bg2");
+  let visibleLayer = bg1;
+  let hiddenLayer = bg2;
+  let currentImage = "";
+  let resetTimer = null;
   
-  let currentRegion = null;
+  function fadeToImage(imageUrl) {
+    if (imageUrl === currentImage) return;
+    currentImage = imageUrl;
   
-  function setBackground(imageUrl) {
-    if (currentRegion !== imageUrl) {
-      document.querySelector("main").style.backgroundImage = `url('${imageUrl}')`;
-      currentRegion = imageUrl;
-    }
+    hiddenLayer.style.backgroundImage = `url('${imageUrl}')`;
+  
+    // Активировать скрытый слой
+    hiddenLayer.classList.add("active");
+    visibleLayer.classList.remove("active");
+  
+    // Поменять местами
+    [visibleLayer, hiddenLayer] = [hiddenLayer, visibleLayer];
   }
   
   document.getElementById("svg-map").addEventListener("load", function () {
@@ -34,15 +60,25 @@ const regionImages = {
       const region = svgDoc.querySelector(`.${regionClass}`);
       if (region) {
         region.addEventListener("mouseenter", () => {
-          setBackground(regionImages[regionClass]);
+          clearTimeout(resetTimer);
+          fadeToImage(regionImages[regionClass]);
         });
   
         region.addEventListener("mouseleave", () => {
-          setBackground("../images/second_background.jpg");
+          resetTimer = setTimeout(() => {
+            fadeToImage(defaultImage);
+          }, 2000);
         });
-      } else {
-        console.warn(`Region ${regionClass} not found`);
+  
+        if (regionLinks[regionClass]) {
+          region.addEventListener("click", () => {
+            window.location.href = regionLinks[regionClass];
+          });
+        }
       }
     });
   });
+  
+  // Установить стартовый фон
+  fadeToImage(defaultImage);
   

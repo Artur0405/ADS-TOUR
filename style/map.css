@@ -1,15 +1,32 @@
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-image: url('../images/second_background.jpg');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  color: #333;
+  font-family: Arial, sans-serif;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.background-layer,
+.background-layer-next {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 1.2s ease-in-out;
+  pointer-events: none;
+}
+
+.background-layer.active {
+  opacity: 1;
 }
 
 header {
@@ -43,48 +60,20 @@ main {
   justify-content: center;
   align-items: center;
   padding: 20px;
-  overflow: hidden;
-  height: calc(100vh - 230px); /* Учитываем header и footer */
+  height: calc(100vh - 230px);
+  z-index: 0;
 }
 
 #svg-map {
-  width: 95vw; /* Почти вся ширина экрана */
-  height: 95vh; /* Почти вся высота экрана */
+  width: 95vw;
+  height: 95vh;
   max-width: 100%;
   max-height: 100%;
-} 
+}
 
 footer {
   background-color: #333;
   color: white;
   padding: 10px;
   text-align: center;
-  position: relative;
-}
-
-#region-preview {
-  position: absolute;
-  top: 100px;
-  right: 30px;
-  width: 280px;
-  height: 180px;
-  background-color: white;
-  border: 2px solid #ccc;
-  display: none;
-  z-index: 999;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-}
-
-#region-preview img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-
-main {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  transition: background-image 0.5s ease-in-out;
 }

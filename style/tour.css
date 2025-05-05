@@ -78,7 +78,7 @@ html, body {
     flex: 0 0 40%;
     height: 100%;
     overflow-y: auto;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.0);
     padding: 20px;
     border-radius: 8px;
     border: 1px solid rgba(70, 130, 180, 0.0);
@@ -172,3 +172,20 @@ html, body {
     font-size: 14px;
     color: #ff0000;
   }
+
+  /* Скрываем скроллбар, но сохраняем прокрутку */
+.tour-text::-webkit-scrollbar,
+.tour-gallery::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.tour-text {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE и Edge */
+}
+
+.tour-gallery {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
