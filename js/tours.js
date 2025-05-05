@@ -3,7 +3,14 @@ const tours = [
     title: "Tour 1",
     description: "7-day tour to the picturesque regions of Armenia",
     image: "../images/tour1.jpg",
-    details: "You will visit Yerevan, Lake Sevan, Dilijan, Tatev and enjoy a cultural program with guides.",
+    details: `Experience an unforgettable 5-day adventure through Armenia, where ancient
+              history, vibrant culture, and stunning natural beauty come together. This
+              carefully curated tour takes you from the bustling streets of Yerevan to sacred
+              monasteries, dramatic mountain fortresses, and serene lakes, offering a
+              perfect blend of guided exploration, culinary delights, and breathtaking
+              landscapes. Immerse yourself in Armenia’s rich heritage, from UNESCO-listed
+              sites to local markets and wineries, creating memories that will last a lifetime.`
+    ,
     gallery: [
       "../images/tour1_1.jpg",
       "../images/tour1_2.jpg",
@@ -14,7 +21,15 @@ const tours = [
     title: "Tour 2",
     description: "Get to know traditional Armenian cuisine and wine",
     image: "../images/tour2.jpg",
-    details: "Immersion in culinary traditions: master classes, tastings, trips to wineries.",
+    details: `Journey through Armenia on this captivating 7-day tour, blending timeless
+              history, vibrant traditions, and inspiring scenery. From the dynamic energy of
+              Yerevan to ancient monasteries perched in dramatic landscapes that unveil
+              Armenia’s soul. Wander through Gyumri’s artistic streets, sip wines in Areni’s
+              vineyards, and marvel at sacred sites framed by majestic mountains, all
+              paired with authentic culinary delights. This immersive experience invites you
+              to connect deeply with Armenia’s cultural tapestry and natural wonders,
+              creating memories to cherish.
+`,
     gallery: [
       "../images/tour2_1.jpg",
       "../images/tour2_2.jpg"

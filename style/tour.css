@@ -129,3 +129,20 @@ html, body {
     border-radius: 6px;
   }
   
+  /* ===== Tour Description Styling ===== */
+  #tour-description h3 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 30px;
+    color: #000000;
+  }
+
+  #tour-description p {
+    font-size: 24px;
+    line-height: 1.45;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: #000000;
+  }
+
+
