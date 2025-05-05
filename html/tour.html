@@ -3,24 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <title>Tour Details</title>
-  <link rel="stylesheet" href="../style/tour.css?v=0.1">
+  <link rel="stylesheet" href="../style/tour.css?v=0.2">
 </head>
 <body>
     <header>
-        <a href="tours.html">
-          <button id="back-button">Back to Tours</button>
-        </a>
-        <h1 id="tour-title">Tour Title</h1>
+      <button class="btn" onclick="window.location.href='tours.html'">Back To Tours</button>
+      <h1 id="tour-title">About Tour</h1>
     </header>
   <main>
     <div class="tour-layout">
       <div class="tour-text">
-        <h2 id="tour-title">Tour Title</h2>
+        <h2 id="tour-title">About Tour</h2>
         <p id="tour-description"></p>
       </div>
       <div id="tour-gallery" class="tour-gallery"></div>
     </div>
   </main>
+  
+  <footer>
+    <p>© 2025 ADS TOUR. All rights reserved.</p>
+  </footer>
   
 
   <script src="../js/tour.js"></script>

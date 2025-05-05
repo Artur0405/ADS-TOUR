@@ -1,7 +1,7 @@
 const tours = [
     {
-      title: "Tour 1",
-      description: "7-day tour to the picturesque regions of Armenia",
+      title: "5-Day Tour",
+      description: "5-day tour to the picturesque regions of Armenia",
       details: [
         {
           day: "Day 1: Yerevan City Adventure",
@@ -37,14 +37,35 @@ const tours = [
         }
       ],
       gallery: [
-        "../images/tour1_1.jpg",
-        "../images/tour1_2.jpg",
-        "../images/tour1_3.jpg"
+        {
+          src: "../images/The_Garni_Temple_5.jpg",
+          caption: "Garni Temple"
+        },
+        {
+          src: "../images/The_Garni_Temple_5.jpg",
+          caption: "Garni Temple"
+        },
+        {
+          src: "../images/The_Garni_Temple_5.jpg",
+          caption: "Garni Temple"
+        },
+        {
+          src: "../images/The_Garni_Temple_5.jpg",
+          caption: "Garni Temple"
+        },
+        {
+          src: "../images/The_Garni_Temple_5.jpg",
+          caption: "Garni Temple"
+        },
+        {
+          src: "../images/The_Garni_Temple_5.jpg",
+          caption: "Garni Temple"
+        }
       ]
     },
     {
-      title: "Tour 2",
-      description: "Get to know traditional Armenian cuisine and wine",
+      title: "7-Day Tour",
+      description: "7-day tour to the picturesque regions of Armenia",
       details: [
         {
           day: "Day 1: Yerevan City Adventure",
@@ -91,45 +112,36 @@ const tours = [
                  packing, followed by a final dinner at Syrovarnya before airport departure..`
         }
       ],
-      gallery: [
-        "../images/The_Garni_Temple_5.jpg",
-        "../images/The_Garni_Temple_5.jpg",
-        "../images/The_Garni_Temple_5.jpg",
-        "../images/The_Garni_Temple_5.jpg",
-        "../images/The_Garni_Temple_5.jpg",
-        "../images/The_Garni_Temple_5.jpg",
-        "../images/The_Garni_Temple_5.jpg",
-        "../images/The_Garni_Temple_5.jpg",
-        "../images/tour2_1.jpg",
-        "../images/tour2_2.jpg",
-        "../images/tour2_1.jpg",
-        "../images/tour2_2.jpg",
-        "../images/tour2_1.jpg",
-        "../images/tour2_2.jpg",
-        "../images/tour2_1.jpg",
-        "../images/tour2_2.jpg",
-        "../images/tour2_1.jpg",
-        "../images/tour2_2.jpg",
-        "../images/tour2_1.jpg",
-        "../images/tour2_2.jpg",
-        "../images/tour2_1.jpg",
-        "../images/tour2_2.jpg",
-        "../images/tour2_1.jpg",
-        "../images/tour2_2.jpg",
-        "../images/tour2_1.jpg",
-        "../images/tour2_2.jpg",
-        "../images/tour2_1.jpg",
-        "../images/tour2_2.jpg",
-        "../images/tour2_1.jpg",
-        "../images/tour2_2.jpg",
-        "../images/tour2_1.jpg",
-        "../images/tour2_2.jpg"
-        
-      ]
+        gallery: [
+          {
+            src: "../images/The_Garni_Temple_5.jpg",
+            caption: "Garni Temple"
+          },
+          {
+            src: "../images/The_Garni_Temple_5.jpg",
+            caption: "Garni Temple"
+          },
+          {
+            src: "../images/The_Garni_Temple_5.jpg",
+            caption: "Garni Temple"
+          },
+          {
+            src: "../images/The_Garni_Temple_5.jpg",
+            caption: "Garni Temple"
+          },
+          {
+            src: "../images/The_Garni_Temple_5.jpg",
+            caption: "Garni Temple"
+          },
+          {
+            src: "../images/The_Garni_Temple_5.jpg",
+            caption: "Garni Temple"
+          }
+        ]
     },
     {
-      title: "Tour 3",
-      description: "Visiting monasteries, fortresses and ancient monuments",
+      title: "10-Day Tour",
+      description: "10-day tour to the picturesque regions of Armenia",
       details: [
         {
           day: "Day 1: Yerevan City Adventure",
@@ -195,10 +207,40 @@ const tours = [
         }
       ],
       gallery: [
-        "../images/tour3_1.jpg",
-        "../images/tour3_2.jpg",
-        "../images/tour3_3.jpg"
+        {
+          src: "../images/The_Garni_Temple_5.jpg",
+          caption: "Garni Temple"
+        },
+        {
+          src: "../images/The_Garni_Temple_5.jpg",
+          caption: "Garni Temple"
+        },
+        {
+          src: "../images/The_Garni_Temple_5.jpg",
+          caption: "Garni Temple"
+        },
+        {
+          src: "../images/The_Garni_Temple_5.jpg",
+          caption: "Garni Temple"
+        },
+        {
+          src: "../images/The_Garni_Temple_5.jpg",
+          caption: "Garni Temple"
+        },
+        {
+          src: "../images/The_Garni_Temple_5.jpg",
+          caption: "Garni Temple"
+        },
+        {
+          src: "../images/The_Garni_Temple_5.jpg",
+          caption: "Garni Temple"
+        },
+        {
+          src: "../images/The_Garni_Temple_5.jpg",
+          caption: "Garni Temple"
+        }
       ]
+      
     }
   ];
   
@@ -225,12 +267,23 @@ const tours = [
 
   
     const gallery = document.getElementById("tour-gallery");
-    tour.gallery.forEach(src => {
+    tour.gallery.forEach(item => {
+      const wrapper = document.createElement("div");
+      wrapper.className = "gallery-item";
+    
       const img = document.createElement("img");
-      img.src = src;
-      img.alt = tour.title;
-      gallery.appendChild(img);
+      img.src = item.src;
+      img.alt = item.caption;
+    
+      const caption = document.createElement("p");
+      caption.textContent = item.caption;
+    
+      wrapper.appendChild(img);
+      wrapper.appendChild(caption);
+      gallery.appendChild(wrapper);
     });
+    
+    
   
     document.getElementById("book-button").onclick = () => {
       window.location.href = `reserve.html?tour=${encodeURIComponent(tour.title)}`;

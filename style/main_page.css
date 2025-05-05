@@ -36,7 +36,7 @@ main {
   gap: 20px;
 }
 
-button {
+.btn {
   background-color: #190000;
   height: 70px;
   color: white;
@@ -48,7 +48,7 @@ button {
   width: 320px;
 }
 
-button:hover {
+.btn:hover {
   background-color: rgba(25, 0, 0, 0.8);
 }
 

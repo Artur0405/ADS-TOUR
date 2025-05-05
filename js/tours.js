@@ -1,7 +1,7 @@
 const tours = [
   {
-    title: "Tour 1",
-    description: "7-day tour to the picturesque regions of Armenia",
+    title: "5-Day Tour",
+    description: "5-day tour to the picturesque regions of Armenia",
     image: "../images/tour1.jpg",
     details: `Experience an unforgettable 5-day adventure through Armenia, where ancient
               history, vibrant culture, and stunning natural beauty come together. This
@@ -18,8 +18,8 @@ const tours = [
     ]
   },
   {
-    title: "Tour 2",
-    description: "Get to know traditional Armenian cuisine and wine",
+    title: "7-Day Tour",
+    description: "7-day tour to the picturesque regions of Armenia",
     image: "../images/tour2.jpg",
     details: `Journey through Armenia on this captivating 7-day tour, blending timeless
               history, vibrant traditions, and inspiring scenery. From the dynamic energy of
@@ -36,32 +36,20 @@ const tours = [
     ]
   },
   {
-    title: "Tour 3",
-    description: "Visiting monasteries, fortresses and ancient monuments",
+    title: "10-Day Tour",
+    description: "10-day tour to the picturesque regions of Armenia",
     image: "../images/tour3.jpg",
-    details: "You will learn about the history of Armenia, visit Garni, Geghard, Zvartnots and other iconic places.",
-    gallery: [
-      "../images/tour3_1.jpg",
-      "../images/tour3_2.jpg",
-      "../images/tour3_3.jpg"
-    ]
-  },
-  {
-    title: "Tour 3",
-    description: "Visiting monasteries, fortresses and ancient monuments",
-    image: "../images/tour3.jpg",
-    details: "You will learn about the history of Armenia, visit Garni, Geghard, Zvartnots and other iconic places.",
-    gallery: [
-      "../images/tour3_1.jpg",
-      "../images/tour3_2.jpg",
-      "../images/tour3_3.jpg"
-    ]
-  },
-  {
-    title: "Tour 3",
-    description: "Visiting monasteries, fortresses and ancient monuments",
-    image: "../images/tour3.jpg",
-    details: "You will learn about the history of Armenia, visit Garni, Geghard, Zvartnots and other iconic places.",
+    details: `Set out on an extraordinary 10-day journey through Armenia, where ancient
+              legacies, vibrant culture, and stunning landscapes come together to form a
+              mesmerizing tapestry. This all-encompassing tour takes you deep into the
+              heart of the country—from the lively avenues of Yerevan to tranquil
+              monasteries, majestic fortresses, and crystal-clear mountain lakes. Explore
+              UNESCO World Heritage sites, taste exceptional Armenian wines, stroll
+              through Gyumri’s creative soul, and discover hidden wonders like
+              underground cave networks and historic carpet workshops. Combined with
+              unforgettable culinary moments, this adventure promises an intimate
+              encounter with Armenia’s rich history and breathtaking beauty.
+`,
     gallery: [
       "../images/tour3_1.jpg",
       "../images/tour3_2.jpg",

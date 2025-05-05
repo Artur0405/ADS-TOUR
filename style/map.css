@@ -17,7 +17,7 @@ header {
   position: relative;
 }
 
-#back-button {
+.btn {
   position: absolute;
   top: 10px;
   left: 10px;
@@ -30,7 +30,7 @@ header {
   cursor: pointer;
 }
 
-#back-button:hover {
+.btn:hover {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
