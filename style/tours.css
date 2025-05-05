@@ -232,8 +232,8 @@ footer {
 
   .modal-content {
     width: 80vw;
-    height: 60vh;
-    padding: 15px;
+    height: 59vh;
+    padding: 12px;
   }
 
   #modal-description {
@@ -241,7 +241,7 @@ footer {
   }
 
   .modal-gallery img {
-    height: 20vh;
+    height: 19vh;
   }
 
   .more-details-button {
