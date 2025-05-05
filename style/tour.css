@@ -189,3 +189,93 @@ html, body {
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
+
+
+/* 📱 Мобильная адаптация */
+@media (max-width: 768px) {
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    background-attachment: scroll;
+  }
+
+  header {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .btn {
+    left: 10px;
+    top: 10px;
+    transform: none;
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+
+  header h1 {
+    font-size: 18px;
+  }
+
+  main {
+    height: auto;
+    padding: 10px;
+    flex-direction: column;
+  }
+
+  .tour-layout {
+    flex-direction: column;
+    padding: 0 10px;
+    height: auto;
+  }
+
+  .tour-text,
+  .tour-gallery {
+    flex: 1 1 100%;
+    height: auto;
+    padding: 10px;
+  }
+
+  .tour-text h2 {
+    font-size: 24px;
+  }
+
+  .tour-text p {
+    font-size: 16px;
+  }
+
+  .tour-text button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .tour-gallery {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .tour-gallery img {
+    width: 48%;
+    aspect-ratio: 1 / 1;
+  }
+
+  #tour-description h3 {
+    font-size: 22px;
+  }
+
+  #tour-description p {
+    font-size: 16px;
+  }
+
+  .gallery-item img {
+    max-width: 100%;
+  }
+
+  .gallery-item p {
+    font-size: 12px;
+  }
+
+  footer {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
