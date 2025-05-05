@@ -189,3 +189,65 @@ footer {
 .more-details-button:hover {
   background-color: #5a9bd3;
 }
+
+/* 📱 Адаптация для телефонов */
+@media (max-width: 768px) {
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  header {
+    padding: 10px;
+    font-size: 18px;
+  }
+
+  .btn {
+    top: 10px;
+    left: 10px;
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  #tours-container {
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .tour {
+    aspect-ratio: 2 / 3;
+    padding: 10px;
+  }
+
+  .tour h2 {
+    font-size: 20px;
+  }
+
+  .tour p {
+    font-size: 16px;
+  }
+
+  .modal-content {
+    width: 90vw;
+    height: 80vh;
+    padding: 15px;
+  }
+
+  #modal-description {
+    font-size: 18px;
+  }
+
+  .modal-gallery img {
+    height: 25vh;
+  }
+
+  .more-details-button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  footer {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
