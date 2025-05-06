@@ -165,8 +165,7 @@ footer {
 }
 
 
-/* 📱 Мобильная адаптация */
-@media (max-width: 768px) {
+  @media (max-width: 768px) {
   html, body {
     height: auto;
     overflow-x: hidden;
@@ -224,19 +223,28 @@ footer {
   }
 
   .tour-gallery {
+    flex: 1 1 100% !important; /* переопределяем desktop flex */
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     justify-content: space-between;
     padding: 10px;
-    width: 100%;
     box-sizing: border-box;
     overflow-y: auto;
+
+    /* Прячем скролл только на телефоне */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .tour-gallery::-webkit-scrollbar {
+    display: none;
   }
 
   .tour-gallery img {
-    width: calc(50% - 10px);
-    max-width: 140px;
+    width: calc(50% - 10px); /* 2 изображения в строку */
+    max-width: 100%;
     aspect-ratio: 1 / 1;
     object-fit: cover;
     border-radius: 6px;
