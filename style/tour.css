@@ -11,21 +11,21 @@ html, body {
   flex-direction: column;
 }
 
-/* СКРЫТИЕ СКРОЛЛБАРОВ ВЕЗДЕ */
+/* Скрываем скроллбары везде, но сохраняем прокрутку */
 .tour-gallery,
 .tour-text {
-  scrollbar-width: none;         /* Firefox */
-  -ms-overflow-style: none;      /* IE и Edge */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 .tour-gallery::-webkit-scrollbar,
 .tour-text::-webkit-scrollbar {
-  display: none;                 /* Chrome & Safari */
+  display: none;
 }
 
 header {
   height: 10vh;
   min-height: 60px;
-  background-color: rgba(200, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.4);
   color: white;
   padding: 0 20px;
   position: relative;
@@ -136,36 +136,28 @@ footer {
   justify-content: flex-start;
 }
 
-.tour-gallery img {
+.gallery-item {
   width: 30%;
+}
+
+.gallery-item img {
+  width: 100%;
   object-fit: cover;
   aspect-ratio: 1 / 1;
   border-radius: 6px;
   display: block;
 }
 
-.gallery-item {
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-.gallery-item img {
-  width: 100%;
-  max-width: 300px;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-  border-radius: 8px;
-}
-
 .gallery-item p {
   margin-top: 8px;
   font-size: 14px;
   color: #ff0000;
+  text-align: center;
 }
 
 
-  @media (max-width: 768px) {
+/* 📱 Мобильная адаптация */
+@media (max-width: 768px) {
   html, body {
     height: auto;
     overflow-x: hidden;
@@ -223,7 +215,7 @@ footer {
   }
 
   .tour-gallery {
-    flex: 1 1 100% !important; /* переопределяем desktop flex */
+    flex: 1 1 100% !important;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -232,8 +224,6 @@ footer {
     padding: 10px;
     box-sizing: border-box;
     overflow-y: auto;
-
-    /* Прячем скролл только на телефоне */
     scrollbar-width: none;
     -ms-overflow-style: none;
   }
@@ -242,17 +232,18 @@ footer {
     display: none;
   }
 
-  .tour-gallery img {
-    width: calc(50% - 10px); /* 2 изображения в строку */
+  .gallery-item {
+    width: calc(50% - 10px);
     max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .gallery-item img {
+    width: 100%;
     aspect-ratio: 1 / 1;
     object-fit: cover;
     border-radius: 6px;
     display: block;
-  }
-
-  .gallery-item img {
-    max-width: 100%;
   }
 
   .gallery-item p {
@@ -263,13 +254,4 @@ footer {
     font-size: 14px;
     padding: 8px;
   }
-    .gallery-img {
-      width: calc(50% - 10px);
-      max-width: 100%;
-      aspect-ratio: 1 / 1;
-      object-fit: cover;
-      border-radius: 6px;
-      display: block;
-    }
-  }
-
+}
