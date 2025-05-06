@@ -197,13 +197,19 @@ footer {
     height: auto;
   }
 
-  /* .tour-text,
-  .tour-gallery {
+  .tour-text {
     flex: none;
-    width: 100%;
+    width: 40%;
     height: auto;
     padding: 10px;
-  } */
+  }
+
+  .tour-gallery {
+    flex: none;
+    width: 60%;
+    height: auto;
+    padding: 10px;
+  }
 
   .tour-text h2 {
     font-size: 22px;
