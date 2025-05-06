@@ -127,12 +127,12 @@ footer {
   height: 100%;
   overflow-y: auto;
   background-color: transparent;
-  padding: 20px;
+  /* padding: 20px; */
   border-radius: 8px;
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  /* gap: 10px; */
   justify-content: flex-start;
 }
 
@@ -145,7 +145,7 @@ footer {
   object-fit: cover;
   aspect-ratio: 1 / 1;
   border-radius: 6px;
-  display: block;
+  display: auto;
 }
 
 .gallery-item p {
