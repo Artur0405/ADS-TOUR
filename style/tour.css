@@ -31,7 +31,7 @@ header {
   transform: translateY(-50%);
   padding: 8px 14px;
   font-size: 14px;
-  background-color: rgba(0, 0, 0, 0.0);
+  background-color: transparent;
   color: white;
   border: none;
   border-radius: 5px;
@@ -73,15 +73,13 @@ footer {
   padding: 0 20px;
 }
 
-/* ТЕКСТ СЛЕВА */
 .tour-text {
   flex: 0 0 40%;
   height: 100%;
   overflow-y: auto;
-  background-color: rgba(0, 0, 0, 0.0);
+  background-color: transparent;
   padding: 20px;
   border-radius: 8px;
-  border: 1px solid rgba(70, 130, 180, 0.0);
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -95,7 +93,7 @@ footer {
 
 .tour-text p {
   font-size: 24px;
-  color: #ffffff;
+  color: white;
   line-height: 1.5;
   flex-grow: 1;
 }
@@ -113,44 +111,26 @@ footer {
   background-color: #5a9bd3;
 }
 
-/* ГАЛЕРЕЯ СПРАВА */
 .tour-gallery {
-  flex: 1 1 100%;
+  flex: 0 0 57%;
   height: 100%;
   overflow-y: auto;
-  background-color: rgba(70, 130, 180, 0.0);
+  background-color: transparent;
   padding: 20px;
   border-radius: 8px;
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  align-content: flex-start;
   justify-content: flex-start;
 }
 
 .tour-gallery img {
-  width: 32%;
-  aspect-ratio: 1 / 1;
+  width: 30%;
   object-fit: cover;
+  aspect-ratio: 1 / 1;
   border-radius: 6px;
   display: block;
-}
-
-/* ===== Tour Description Styling ===== */
-#tour-description h3 {
-  font-size: 34px;
-  font-weight: bold;
-  margin-top: 30px;
-  color: #9b2d30;
-}
-
-#tour-description p {
-  font-size: 26px;
-  line-height: 1.45;
-  margin-top: 10px;
-  margin-bottom: 20px;
-  color: #ede8d0;
 }
 
 .gallery-item {
@@ -173,30 +153,13 @@ footer {
   color: #ff0000;
 }
 
-/* Скрываем скроллбар */
-.tour-text::-webkit-scrollbar,
-.tour-gallery::-webkit-scrollbar {
-  width: 0;
-  height: 0;
-}
-.tour-text {
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-}
-.tour-gallery {
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-}
-
-
-/* 📱 Мобильная адаптация */
+/* Мобильная адаптация */
 @media (max-width: 768px) {
   html, body {
-    max-width: 100%;
+    height: auto;
     overflow-x: hidden;
     overflow-y: auto;
     background-attachment: scroll;
-    height: auto;
   }
 
   header {
@@ -236,7 +199,7 @@ footer {
   }
 
   .tour-text h2 {
-    font-size: 24px;
+    font-size: 22px;
   }
 
   .tour-text p {
@@ -249,28 +212,22 @@ footer {
   }
 
   .tour-gallery {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     gap: 10px;
-    width: 100%;
+    justify-content: space-between;
+    padding: 10px;
     box-sizing: border-box;
   }
 
   .tour-gallery img {
-    width: calc(50% - 10px);
-    aspect-ratio: 1 / 1;
+    width: calc(50% - 10px); /* 2 картинки в строку */
+    max-width: 140px;
     object-fit: cover;
+    aspect-ratio: 1 / 1;
     border-radius: 6px;
     display: block;
-  }
-
-  #tour-description h3 {
-    font-size: 22px;
-  }
-
-  #tour-description p {
-    font-size: 16px;
   }
 
   .gallery-item img {
