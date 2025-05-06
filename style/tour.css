@@ -25,7 +25,7 @@ html, body {
 header {
   height: 10vh;
   min-height: 60px;
-  background-color: rgba(230, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.4);
   color: white;
   padding: 0 20px;
   position: relative;
@@ -153,4 +153,111 @@ footer {
   font-size: 14px;
   color: #ff0000;
   text-align: center;
+}
+
+/* this is for mobile */
+
+
+
+@media (max-width: 768px) {
+  html, body {
+    height: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-attachment: scroll;
+  }
+
+  header {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .btn {
+    left: 10px;
+    top: 10px;
+    transform: none;
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+
+  header h1 {
+    font-size: 18px;
+  }
+
+  main {
+    height: auto;
+    padding: 10px;
+    flex-direction: column;
+  }
+
+  .tour-layout {
+    flex-direction: column;
+    padding: 0 10px;
+    height: auto;
+  }
+
+  .tour-text,
+  .tour-gallery {
+    flex: none;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+
+  .tour-text h2 {
+    font-size: 22px;
+  }
+
+  .tour-text p {
+    font-size: 16px;
+  }
+
+  .tour-text button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .tour-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .tour-gallery::-webkit-scrollbar {
+    display: none;
+  }
+
+  .gallery-item {
+    flex: 0 0 calc(50% - 5px);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    aspect-ratio: 1 / 1.1;
+  }
+
+  .gallery-item img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 6px;
+    display: block;
+  }
+
+  .gallery-item p {
+    font-size: 12px;
+    margin: 4px 0 0 0;
+    text-align: center;
+    line-height: 1.2;
+  }
+
+  footer {
+    font-size: 14px;
+    padding: 8px;
+  }
 }
