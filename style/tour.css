@@ -234,11 +234,12 @@ footer {
 
   .gallery-item {
     width: 30%;
+    height: calc(width);
   }
 
   .gallery-item img {
     width: 100%;
-    /* height: auto; */
+    height: calc(width);
     aspect-ratio: 1 / 1;
     /* object-fit: cover; */
     border-radius: 6px;
