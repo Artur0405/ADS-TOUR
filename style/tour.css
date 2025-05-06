@@ -85,7 +85,7 @@ footer {
 }
 
 .tour-text {
-  flex: 0 0 40%;
+  width: 40%;
   height: 100%;
   overflow-y: auto;
   background-color: transparent;
@@ -239,12 +239,12 @@ footer {
   }
 
   .gallery-item {
-    flex: 0 0 30%;
-    box-sizing: border-box;
+    width: 30%;
+    /* box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    aspect-ratio: 1 / 1;
+    align-items: center; */
+    /* aspect-ratio: 1 / 1; */
   }
 
   .gallery-item img {
@@ -260,7 +260,7 @@ footer {
     font-size: 12px;
     margin: 4px 0 0 0;
     text-align: center;
-    /* line-height: 1.2; */
+    line-height: 1.2;
   }
 
   footer {
