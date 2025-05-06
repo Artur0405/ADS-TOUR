@@ -2,7 +2,8 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
     font-family: Arial, sans-serif;
     background: url('../images/Yerevan_night.jpg') no-repeat center center fixed;
     background-size: cover;
@@ -196,6 +197,7 @@ html, body {
   html, body {
     max-width: 100%;
     overflow-x: hidden;
+    overflow-y: auto;
     background-attachment: scroll;
   }
 
@@ -254,7 +256,7 @@ html, body {
   }
 
   .tour-gallery img {
-    width: 48%;
+    width: 30%;
     aspect-ratio: 1 / 1;
   }
 
