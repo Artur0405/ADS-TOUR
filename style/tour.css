@@ -256,7 +256,7 @@ html, body {
   }
 
   .tour-gallery img {
-    width: 30%;
+    width: 48%;
     aspect-ratio: 1 / 1;
   }
 
@@ -269,7 +269,7 @@ html, body {
   }
 
   .gallery-item img {
-    max-width: 100%;
+    max-width: 30%;
   }
 
   .gallery-item p {
