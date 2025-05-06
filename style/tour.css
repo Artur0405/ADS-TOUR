@@ -1,197 +1,195 @@
 html, body {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    font-family: Arial, sans-serif;
-    background: url('../images/Yerevan_night.jpg') no-repeat center center fixed;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  
-  header {
-    height: 10vh;
-    min-height: 60px;
-    background-color: rgba(0, 0, 0, 0.4);
-    color: white;
-    padding: 0 20px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-  }
-  
-  .btn {
-    position: absolute;
-    left: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    padding: 8px 14px;
-    font-size: 14px;
-    background-color: rgba(0, 0, 0, 0.0);
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  .btn:hover {
-    background-color: rgba(0, 0, 0, 0.3);
-  }
-  
-  header h1 {
-    margin: 0;
-    font-size: 20px;
-  }
-  
-  main {
-    height: 86vh;
-    padding: 20px;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  font-family: Arial, sans-serif;
+  background: url('../images/Yerevan_night.jpg') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
 
-  footer {
-    background-color: rgba(0, 0, 0, 0.7);
-    color: white;
-    padding: 10px;
-    text-align: center;
-  }
-  
-  .tour-layout {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
-    justify-content: space-between; /* ← прижимаем к краям */
-    align-items: stretch;
-    gap: 0;
-    padding: 0 20px;
-  }
-  
-  /* ТЕКСТ СЛЕВА */
-  .tour-text {
-    flex: 0 0 40%;
-    height: 100%;
-    overflow-y: auto;
-    background-color: rgba(0, 0, 0, 0.0);
-    padding: 20px;
-    border-radius: 8px;
-    border: 1px solid rgba(70, 130, 180, 0.0);
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .tour-text h2 {
-    margin-top: 0;
-    font-size: 42px;
-    color: #9b2d30;
-  }
-  
-  .tour-text p {
-    font-size: 24px;
-    color: #ffffff;
-    line-height: 1.5;
-    flex-grow: 1;
-  }
-  
-  .tour-text button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #4682b4;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  .tour-text button:hover {
-    background-color: #5a9bd3;
-  }
-  
-  /* ГАЛЕРЕЯ СПРАВА */
-  .tour-gallery {
-    flex: 0 0 57%;
-    height: 100%;
-    overflow-y: auto;
-    background-color: rgba(70, 130, 180, 0.0);
-    padding: 20px;
-    border-radius: 8px;
-    border: 1px solid rgba(70, 130, 180, 0.0);
-    box-sizing: border-box;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    align-content: flex-start;
-    justify-content: flex-start;
-  }
-  
-  .tour-gallery img {
-    width: 32%;
-    aspect-ratio: 1 / 1; /* ← квадратные изображения */
-    object-fit: cover;
-    border-radius: 6px;
-  }
-  
-  /* ===== Tour Description Styling ===== */
-  #tour-description h3 {
-    font-size: 34px;
-    font-weight: bold;
-    margin-top: 30px;
-    color: #9b2d30;
-  }
+header {
+  height: 10vh;
+  min-height: 60px;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  padding: 0 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
 
-  #tour-description p {
-    font-size: 26px;
-    line-height: 1.45;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    color: #ede8d0;
-  }
+.btn {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 8px 14px;
+  font-size: 14px;
+  background-color: rgba(0, 0, 0, 0.0);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
 
-  .gallery-item {
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  
-  .gallery-item img {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    border-radius: 8px;
-  }
-  
-  .gallery-item p {
-    margin-top: 8px;
-    font-size: 14px;
-    color: #ff0000;
-  }
+header h1 {
+  margin: 0;
+  font-size: 20px;
+}
 
-  /* Скрываем скроллбар, но сохраняем прокрутку */
+main {
+  height: 86vh;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.tour-layout {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 0;
+  padding: 0 20px;
+}
+
+/* ТЕКСТ СЛЕВА */
+.tour-text {
+  flex: 0 0 40%;
+  height: 100%;
+  overflow-y: auto;
+  background-color: rgba(0, 0, 0, 0.0);
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid rgba(70, 130, 180, 0.0);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.tour-text h2 {
+  margin-top: 0;
+  font-size: 42px;
+  color: #9b2d30;
+}
+
+.tour-text p {
+  font-size: 24px;
+  color: #ffffff;
+  line-height: 1.5;
+  flex-grow: 1;
+}
+
+.tour-text button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #4682b4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.tour-text button:hover {
+  background-color: #5a9bd3;
+}
+
+/* ГАЛЕРЕЯ СПРАВА */
+.tour-gallery {
+  flex: 1 1 100%;
+  height: 100%;
+  overflow-y: auto;
+  background-color: rgba(70, 130, 180, 0.0);
+  padding: 20px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-content: flex-start;
+  justify-content: flex-start;
+}
+
+.tour-gallery img {
+  width: 32%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 6px;
+  display: block;
+}
+
+/* ===== Tour Description Styling ===== */
+#tour-description h3 {
+  font-size: 34px;
+  font-weight: bold;
+  margin-top: 30px;
+  color: #9b2d30;
+}
+
+#tour-description p {
+  font-size: 26px;
+  line-height: 1.45;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: #ede8d0;
+}
+
+.gallery-item {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.gallery-item img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+.gallery-item p {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #ff0000;
+}
+
+/* Скрываем скроллбар */
 .tour-text::-webkit-scrollbar,
 .tour-gallery::-webkit-scrollbar {
   width: 0;
   height: 0;
 }
-
 .tour-text {
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE и Edge */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
-
 .tour-gallery {
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
 
 
+/* 📱 Мобильная адаптация */
 @media (max-width: 768px) {
   html, body {
     max-width: 100%;
@@ -253,19 +251,18 @@ html, body {
   .tour-gallery {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     gap: 10px;
     width: 100%;
     box-sizing: border-box;
   }
 
   .tour-gallery img {
-    width: 30%;
-    max-width: 100px;
+    width: calc(50% - 10px);
     aspect-ratio: 1 / 1;
     object-fit: cover;
     border-radius: 6px;
-    box-sizing: border-box;
+    display: block;
   }
 
   #tour-description h3 {
@@ -277,7 +274,7 @@ html, body {
   }
 
   .gallery-item img {
-    max-width: 30%;
+    max-width: 100%;
   }
 
   .gallery-item p {
