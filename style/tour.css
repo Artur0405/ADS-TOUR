@@ -207,7 +207,7 @@ footer {
   .tour-gallery {
     flex: none;
     width: 50%;
-    height: auto;
+    height: 100%;
     padding: 10px;
     overflow-y: auto;
   }
