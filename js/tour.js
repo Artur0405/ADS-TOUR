@@ -84,6 +84,26 @@ const tours = [
         {
           src: "../images/The_Garni_Temple_5.jpg",
           caption: "Garni Temple"
+        },
+        {
+          src: "../images/The_Garni_Temple_5.jpg",
+          caption: "Garni Temple"
+        },
+        {
+          src: "../images/The_Garni_Temple_5.jpg",
+          caption: "Garni Temple"
+        },
+        {
+          src: "../images/The_Garni_Temple_5.jpg",
+          caption: "Garni Temple"
+        },
+        {
+          src: "../images/The_Garni_Temple_5.jpg",
+          caption: "Garni Temple"
+        },
+        {
+          src: "../images/The_Garni_Temple_5.jpg",
+          caption: "Garni Temple"
         }
       ]
     },
