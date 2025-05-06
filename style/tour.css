@@ -196,6 +196,7 @@ html, body {
 @media (max-width: 768px) {
   html, body {
     max-width: 100%;
+    max-height: 60%;
     overflow-x: hidden;
     overflow-y: auto;
     background-attachment: scroll;
@@ -256,7 +257,7 @@ html, body {
   }
 
   .tour-gallery img {
-    width: 48%;
+    max-width: 30%;
     aspect-ratio: 1 / 1;
   }
 
@@ -269,7 +270,7 @@ html, body {
   }
 
   .gallery-item img {
-    max-width: 30%;
+    max-width: 100%;
   }
 
   .gallery-item p {
