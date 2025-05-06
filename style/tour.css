@@ -260,8 +260,8 @@ html, body {
   }
 
   .tour-gallery img {
-    width: 45%;
-    max-width: 150px;
+    width: 30%;
+    max-width: 100px;
     aspect-ratio: 1 / 1;
     object-fit: cover;
     border-radius: 6px;
