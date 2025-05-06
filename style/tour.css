@@ -205,13 +205,14 @@ footer {
   }
 
   .tour-gallery {
-    flex: none;
+    /* flex: none; */
     width: 50%;
     height: 100%;
     padding: 10px;
     overflow-y: auto;
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-start;
   }
 
   .tour-text h2 {
