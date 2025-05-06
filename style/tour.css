@@ -257,7 +257,8 @@ html, body {
   }
 
   .tour-gallery img {
-    max-width: 30%;
+    width: 30%;
+    max-width: 100px;
     aspect-ratio: 1 / 1;
   }
 
