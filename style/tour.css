@@ -210,6 +210,8 @@ footer {
     height: 100%;
     padding: 10px;
     overflow-y: auto;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .tour-text h2 {
