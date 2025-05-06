@@ -274,6 +274,7 @@ const tours = [
       const img = document.createElement("img");
       img.src = item.src;
       img.alt = item.caption;
+      img.classList.add("gallery-img");
     
       const caption = document.createElement("p");
       caption.textContent = item.caption;
