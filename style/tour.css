@@ -253,7 +253,7 @@ html, body {
 
   .tour-gallery {
     flex: 1 1 100%;
-    width: 100%;
+    width: 20%;
     height: auto;
     padding: 10px;
     flex-wrap: wrap;
@@ -262,7 +262,7 @@ html, body {
   }
 
   .tour-gallery img {
-    width: 45%;
+    width: 100%;
     max-width: 160px;
     aspect-ratio: 1 / 1;
     object-fit: cover;
@@ -290,4 +290,3 @@ html, body {
     font-size: 14px;
     padding: 8px;
   }
-}
