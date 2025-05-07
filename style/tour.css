@@ -159,13 +159,12 @@ footer {
 /* this is for mobile */
 
 
-@media (max-width: 1400px) {
+@media (max-width: 768px) {
   html, body {
     height: 100vh;
     overflow-x: hidden;
     overflow-y: auto;
     background-attachment: scroll;
-    background: url('../images/Yerevan_day.jpg') no-repeat center center fixed;
     background-size: cover;
   }
 
@@ -190,7 +189,7 @@ footer {
   }
 
   .tour-text {
-    width: 60%;
+    width: 45%;
     padding: 10px;
     box-sizing: border-box;
     overflow: visible;
