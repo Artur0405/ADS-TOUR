@@ -192,7 +192,7 @@ footer {
   }
 
   .gallery-item {
-    width: calc(50% - 5px); /* Две в ряд, с отступом */
+    width: calc(50% - 5px) !important; /* Две в ряд, с отступом */
     box-sizing: border-box;
     margin-bottom: 10px;
     display: flex;
