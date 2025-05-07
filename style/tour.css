@@ -192,7 +192,7 @@ footer {
     width: 58%;
     padding: 10px;
     box-sizing: border-box;
-    overflow: visible;
+    overflow-y: auto;
     display: flex;
     flex-direction: column;
   }
