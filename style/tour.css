@@ -159,7 +159,7 @@ footer {
 /* this is for mobile */
 
 
-@media (max-width: 768px) {
+@media (max-width: 1400px) {
   html, body {
     height: 100vh;
     overflow-x: hidden;
@@ -190,7 +190,7 @@ footer {
   }
 
   .tour-text {
-    width: 45%;
+    width: 60%;
     padding: 10px;
     box-sizing: border-box;
     overflow: visible;
