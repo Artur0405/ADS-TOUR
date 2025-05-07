@@ -161,14 +161,8 @@ footer {
 
 
 @media (max-width: 768px) {
-
-  .tour-gallery .gallery-item {
-    width: 48% !important;
-    background: red; /* временно: чтобы убедиться, что работает */
-  }
-
   html, body {
-    height: 100vh;
+    height: auto;
     overflow-x: hidden;
     overflow-y: auto;
     background-attachment: scroll;
@@ -192,42 +186,36 @@ footer {
   }
 
   main {
-    /* height: auto; */
     padding: 10px;
     flex-direction: column;
-    overflow-y: scroll;
   }
 
   .tour-layout {
-    /* flex-direction: column; */
-    padding: 0 10px;
-    height: 100%;
+    flex-direction: column;
+    padding: 10px;
     width: 100%;
+    height: auto;
   }
 
   .tour-text {
-    width: 48% !important;
-    padding: 1.5%;
-    display: flex;
+    all: unset;
+    display: block;
+    width: 100%;
+    padding: 10px;
   }
 
   .tour-gallery {
-    width: 48% !important;
-    padding: 1.5%;
+    all: unset;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
     overflow-y: auto;
-  }
 
-  .tour-text h2 {
-    font-size: 22px;
-  }
-
-  .tour-text p {
-    font-size: 16px;
-  }
-
-  .tour-text button {
-    font-size: 14px;
-    padding: 8px 16px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
   }
 
   .tour-gallery::-webkit-scrollbar {
@@ -235,28 +223,35 @@ footer {
   }
 
   .gallery-item {
-    width: 48% !important;
-    /* aspect-ratio: 1 / 1; */
+    all: unset;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .gallery-item img {
+    all: unset;
     width: 100%;
     aspect-ratio: 1 / 1;
     object-fit: cover;
     border-radius: 6px;
-    /* display: flex; */
+    display: block;
   }
 
   .gallery-item p {
-    font-size: 60px;
-    margin: 4px 0 0 0;
+    all: unset;
+    font-size: 12px;
     text-align: center;
+    margin-top: 5px;
     line-height: 1.2;
   }
 
   footer {
     font-size: 14px;
-    /* padding: 8px; */
-    margin-bottom: 0px;
+    padding: 8px;
+    margin-bottom: 0;
   }
 }
+
