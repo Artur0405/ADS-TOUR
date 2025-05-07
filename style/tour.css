@@ -3,7 +3,7 @@ html, body {
   padding: 0;
   height: 100vh;
   overflow-x: hidden;
-  /* overflow-y: hidden; */
+  overflow-y: auto;
   font-family: Arial, sans-serif;
   background: url('../images/Yerevan_night.jpg') no-repeat center center fixed;
   background-size: cover;
@@ -81,7 +81,7 @@ footer {
   justify-content: space-between;
   align-items: stretch;
   gap: 0;
-  padding: 0 20px;
+  padding: 1.5%;
 }
 
 .tour-text {
@@ -139,7 +139,7 @@ footer {
 }
 
 .gallery-item {
-  width: 32%;
+  width: 30%;
 }
 
 .gallery-item img {
@@ -200,9 +200,7 @@ footer {
   }
 
   .tour-text {
-    /* flex: none; */
     width: 48%;
-    height: auto;
     padding: 1.5%;
     display: flex;
   }
@@ -231,7 +229,7 @@ footer {
   }
 
   .gallery-item {
-    width: 100%;
+    width: 48%;
     /* aspect-ratio: 1 / 1; */
   }
 
@@ -253,5 +251,6 @@ footer {
   footer {
     font-size: 14px;
     /* padding: 8px; */
+    margin-bottom: 0px;
   }
 }
