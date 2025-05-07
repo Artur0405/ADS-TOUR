@@ -139,7 +139,7 @@ footer {
 }
 
 .gallery-item {
-  width: 30%;
+  width: 32%;
 }
 
 .gallery-item img {
@@ -200,13 +200,13 @@ footer {
   }
 
   .tour-text {
-    width: 48%;
+    width: 48% !important;
     padding: 1.5%;
     display: flex;
   }
 
   .tour-gallery {
-    width: 48%;
+    width: 48% !important;
     padding: 1.5%;
     overflow-y: auto;
   }
