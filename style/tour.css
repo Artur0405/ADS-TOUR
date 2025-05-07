@@ -231,7 +231,7 @@ footer {
   }
 
   .gallery-item {
-    width: 90%;
+    width: 98%;
     margin-bottom: 0;
     box-sizing: border-box;
   }
@@ -254,7 +254,7 @@ footer {
   footer {
     font-size: 14px;
     padding: 8px;
-    margin-top: 20px;
+    /* margin-top: 20px; */
   }
 }
 
