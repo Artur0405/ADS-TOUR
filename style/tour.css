@@ -161,6 +161,12 @@ footer {
 
 
 @media (max-width: 768px) {
+
+  .tour-gallery .gallery-item {
+    width: 48% !important;
+    background: red; /* временно: чтобы убедиться, что работает */
+  }
+
   html, body {
     height: 100vh;
     overflow-x: hidden;
@@ -229,7 +235,7 @@ footer {
   }
 
   .gallery-item {
-    width: 48%;
+    width: 48% !important;
     /* aspect-ratio: 1 / 1; */
   }
 
