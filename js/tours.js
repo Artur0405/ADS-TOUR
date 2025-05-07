@@ -1,8 +1,12 @@
 const tours = [
   {
     title: "5-Day Tour",
-    description: "5-day tour to the picturesque regions of Armenia",
-    image: "../images/tour1.jpg",
+    description: `Embark on a 5-day adventure to uncover Armenia’s vibrant culture and stunning
+                  landscapes! Savor authentic cuisine, explore historic sites, and enjoy seamless guided
+                  tours crafted for Chinese travelers. Let ADS Tour deliver an unforgettable, hassle-free
+                  journey.`
+    ,
+    image: "../images/Cafesjian.jpg",
     details: `Experience an unforgettable 5-day adventure through Armenia, where ancient
               history, vibrant culture, and stunning natural beauty come together. This
               carefully curated tour takes you from the bustling streets of Yerevan to sacred
@@ -12,14 +16,17 @@ const tours = [
               sites to local markets and wineries, creating memories that will last a lifetime.`
     ,
     gallery: [
-      "../images/tour1_1.jpg",
-      "../images/tour1_2.jpg",
-      "../images/tour1_3.jpg"
+      "../images/Cafesjian.jpg",
+      "../images/Republic_squeare.jpg",
+      "../images/tour1_3.jpg",
     ]
   },
   {
     title: "7-Day Tour",
-    description: "7-day tour to the picturesque regions of Armenia",
+    description: `Dive into Armenia’s charm with a 7-day escape filled with cultural treasures and scenic
+                  beauty! From bustling markets to serene monasteries, our expert-guided tours ensure a
+                  rich experience. Book now for a week of discovery with ADS Tour’s top-quality service.`
+    ,
     image: "../images/tour2.jpg",
     details: `Journey through Armenia on this captivating 7-day tour, blending timeless
               history, vibrant traditions, and inspiring scenery. From the dynamic energy of
@@ -37,7 +44,10 @@ const tours = [
   },
   {
     title: "10-Day Tour",
-    description: "10-day tour to the picturesque regions of Armenia",
+    description: `Experience Armenia like never before on a 10-day journey of culture, history, and flavors!
+                  Our custom itineraries bring you closer to Armenia’s heart with guided tours and exclusive
+                  tastings. Join ADS Tour for the ultimate adventure tailored for Chinese explorers.`
+    ,
     image: "../images/tour3.jpg",
     details: `Set out on an extraordinary 10-day journey through Armenia, where ancient
               legacies, vibrant culture, and stunning landscapes come together to form a

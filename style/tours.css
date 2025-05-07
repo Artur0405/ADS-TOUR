@@ -78,8 +78,9 @@ main {
 
 .tour img {
   width: 100%;
+  aspect-ratio: 3 / 3.3;
   height: auto;
-  max-height: 40%;
+  /* max-height: 70%; */
   object-fit: cover;
   border-radius: 8px;
 }
@@ -154,10 +155,12 @@ footer {
   margin: 15px 0;
   overflow-x: auto;
   padding-bottom: 10px;
+  height: 40%;
 }
 
 .modal-gallery img {
-  height: calc(66vh / 3);
+  height: calc(66vh / 2.7);
+  aspect-ratio: 1.5 / 1;
   border-radius: 6px;
   object-fit: cover;
 }
@@ -168,6 +171,7 @@ footer {
   margin: 0;
   flex-grow: 1;
   overflow-y: auto;
+  text-align: justify;
 }
 
 /* Нижняя панель модалки с кнопкой */
