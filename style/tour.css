@@ -124,17 +124,19 @@ footer {
 
 .tour-gallery {
   width: 60%;
-  height: 100%;
+  height: fit-content;
+  max-height: 100%;
+  object-fit: none;
   overflow-y: auto;
   background-color: transparent;
   padding-left: 50px;
   padding-top: 20px;
   border-radius: 8px;
-  box-sizing: border-box;
-  /* display: flex; */
-  flex-wrap: wrap;
-  gap: 10px;
+  box-sizing: content-box;
+  flex-wrap:wrap;
+  column-gap: 16px;
   justify-content: flex-start;
+  display: flex;
 }
 
 .gallery-item {
@@ -146,7 +148,6 @@ footer {
   object-fit: cover;
   aspect-ratio: 1 / 1;
   border-radius: 6px;
-  display: block;
 }
 
 .gallery-item p {
@@ -189,6 +190,7 @@ footer {
     height: auto;
     padding: 10px;
     flex-direction: column;
+    overflow-y: auto;
   }
 
   .tour-layout {
@@ -206,8 +208,7 @@ footer {
 
   .tour-gallery {
     /* flex: none; */
-    width: 50%;
-    height: 100%;
+    width: 60%;
     padding: 10px;
     overflow-y: auto;
     display: flex;
