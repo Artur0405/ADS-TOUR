@@ -201,15 +201,15 @@ footer {
 
   .tour-text {
     /* flex: none; */
-    width: 40%;
+    width: 48%;
     height: auto;
-    padding: 10px;
+    padding: 1.5%;
     display: flex;
   }
 
   .tour-gallery {
-    width: 58%;
-    padding: 10px;
+    width: 48%;
+    padding: 1.5%;
     overflow-y: auto;
     display: flex;
 
@@ -234,7 +234,7 @@ footer {
 
   .gallery-item {
     width: 48%;
-    aspect-ratio: 1 / 1.1;
+    aspect-ratio: 1 / 1;
   }
 
   .gallery-item img {
