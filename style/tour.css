@@ -93,7 +93,7 @@ footer {
   border-radius: 8px;
   box-sizing: border-box;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
 }
 
 .tour-text h2 {
@@ -132,7 +132,7 @@ footer {
   padding-top: 20px;
   border-radius: 8px;
   box-sizing: border-box;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   column-gap: 16px;
   justify-content: flex-start;
   display: flex;
@@ -159,7 +159,7 @@ footer {
 /* this is for mobile */
 
 
-/*
+
 @media (max-width: 768px) {
   html, body {
     height: 100vh;
@@ -172,9 +172,11 @@ footer {
     width: 100%;
     height: 86vh;
     padding: 10px;
+    /* flex-direction: column; */
   }
 
   .tour-layout {
+    /* flex-direction: column; */
     width: 100%;
     height: 100%;
     padding: 10px;
@@ -221,10 +223,11 @@ footer {
   }
 
   .gallery-item {
-    width: 48%;
+    width: 100%;
     box-sizing: border-box;
     margin-bottom: 10px;
     display: flex;
+    /* flex-direction: column; */
     align-items: center;
   }
 
@@ -249,4 +252,3 @@ footer {
     margin-top: 20px;
   }
 }
-*/
