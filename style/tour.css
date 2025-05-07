@@ -3,7 +3,7 @@ html, body {
   padding: 0;
   height: 100vh;
   overflow-x: hidden;
-  overflow-y: auto;
+  overflow-y: hidden;
   font-family: Arial, sans-serif;
   background: url('../images/Yerevan_night.jpg') no-repeat center center fixed;
   background-size: cover;
@@ -93,7 +93,7 @@ footer {
   border-radius: 8px;
   box-sizing: border-box;
   display: flex;
-  /* flex-direction: column; */
+  flex-direction: column;
 }
 
 .tour-text h2 {
