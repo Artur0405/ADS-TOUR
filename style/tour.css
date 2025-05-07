@@ -200,17 +200,16 @@ footer {
   .tour-text {
     all: unset;
     display: block;
-    width: 100%;
-    padding: 10px;
+    width: 50%;
+    padding: 1.5%;
   }
 
   .tour-gallery {
     all: unset;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    /* display: grid; */
     gap: 10px;
-    width: 100%;
-    padding: 10px;
+    width: 50%;
+    padding: 1.5%;
     box-sizing: border-box;
     overflow-y: auto;
 
