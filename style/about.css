@@ -56,23 +56,16 @@ body {
   
 
   @media (max-width: 768px) {
-    main.contact-page {
-      width: 90%;
-      aspect-ratio: auto;
-      padding: 10px;
+    main {
+      font-size: 16px;
     }
-  
-    .contact-form form {
-      padding: 0;
-    }
-  
-    .contact-form button {
-      width: 100%;
-      text-align: center;
+
+    header {
+      font-size: 14px;
     }
   
     .btn {
-      font-size: 16px;
+      font-size: 12px;
       padding: 12px 18px;
     }
   }
