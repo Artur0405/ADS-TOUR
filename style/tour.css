@@ -4,7 +4,7 @@ html, body {
   height: 100vh;
   overflow-x: hidden;
   overflow-y: hidden;
-  font-family: Arial, sans-serif;
+  font-family: 'Edu QLD Beginner', cursive;
   background: url('../images/Yerevan_night.jpg') no-repeat center center fixed;
   background-size: cover;
   display: flex;
@@ -68,6 +68,7 @@ main {
 
 footer {
   background-color: rgba(0, 0, 0, 0.7);
+  font-family: Arial, sans-serif;
   color: white;
   padding: 10px;
   text-align: center;
@@ -81,14 +82,14 @@ footer {
   justify-content: space-between;
   align-items: stretch;
   gap: 0;
-  padding: 1.5%;
+  padding: 1%;
 }
 
 .tour-text {
-  width: 40%;
+  width: 39%;
   height: 100%;
   overflow-y: auto;
-  background-color: transparent;
+  background-color: rgba(168, 226, 253, 0.885);
   padding: 20px;
   border-radius: 8px;
   box-sizing: border-box;
@@ -98,13 +99,20 @@ footer {
 
 .tour-text h2 {
   margin-top: 0;
-  font-size: 42px;
-  color: #9b2d30;
+  font-size: 40px;
+  color: #232222;
+}
+.tour-text h3 {
+  font-size: 24px;
+  color:  rgb(49, 49, 49);
+  font: bold;
+  line-height: 1.5;
+  flex-grow: 1;
 }
 
 .tour-text p {
   font-size: 24px;
-  color: white;
+  color: rgb(49, 49, 49);
   line-height: 1.5;
   flex-grow: 1;
 }
@@ -123,12 +131,13 @@ footer {
 }
 
 .tour-gallery {
-  width: 60%;
+  width: 59%;
   height: fit-content;
   max-height: 100%;
   overflow-y: auto;
-  background-color: transparent;
-  padding-left: 50px;
+  background-color: rgba(234, 222, 189, 0.3);
+  padding-left: 20px;
+  padding-right: 20px;
   padding-top: 20px;
   border-radius: 8px;
   box-sizing: border-box;
