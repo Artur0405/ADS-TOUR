@@ -190,7 +190,7 @@ footer {
   }
 
   .tour-text {
-    width: 58%;
+    width: 59%;
     padding: 10px;
     box-sizing: border-box;
     overflow-y: auto;
@@ -220,6 +220,7 @@ footer {
     justify-content: space-between;
     gap: 0;
     padding: 10px;
+    padding-left: 15px;
     overflow-y: auto;
     box-sizing: border-box;
 
