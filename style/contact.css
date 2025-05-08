@@ -125,8 +125,9 @@ body {
   
     .btn {
       font-size: 12px;
-      left: 10px;
+      left: 8px;
       padding: 12px 18px;
+      top: 3%;
     }
   }
   
