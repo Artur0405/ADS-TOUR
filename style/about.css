@@ -21,7 +21,7 @@ body {
     text-align: center;
   }
   
-  #back-button {
+  .btn {
     position: absolute;
     top: 4%;
     left: 20px;
@@ -34,7 +34,7 @@ body {
     cursor: pointer;
   }
   
-  #back-button:hover {
+  .btn:hover {
     background-color: rgba(0, 0, 0, 0.3);
   }
   
@@ -52,5 +52,28 @@ body {
     padding: 10px;
     text-align: center;
     margin-top: auto;
+  }
+  
+
+  @media (max-width: 768px) {
+    main.contact-page {
+      width: 90%;
+      aspect-ratio: auto;
+      padding: 10px;
+    }
+  
+    .contact-form form {
+      padding: 0;
+    }
+  
+    .contact-form button {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .btn {
+      font-size: 16px;
+      padding: 12px 18px;
+    }
   }
   

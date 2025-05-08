@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact — ADS TOUR Team</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../style/contact.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Contact ADS TOUR</h1>
+    <button class="btn" onclick="window.location.href='../html/main_page.html'">Back To Home</button>
+  </header>
+
+  <main class="contact-page">
+    <section class="contact-info">
+      <h2>Contact Information</h2>
+      <!-- <p><strong>Address:</strong> Example Street 123, Yerevan, Armenia</p> -->
+      <p><strong>Phone:</strong> +374 55 991998</p>
+      <p><strong>Email:</strong> support@ads-tour.com</p>
+    </section>
+
+    <section class="contact-form">
+      <h2>Send Us a Message</h2>
+      <form action="https://formspree.io/f/xovdwwdz" method="POST">
+        <label>
+          Your Name
+          <input type="text" name="name" required />
+        </label>
+        <label>
+          Your Email
+          <input type="email" name="_replyto" required />
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 ADS TOUR. All rights reserved.</p>
+  </footer>
+</body>
+</html>
