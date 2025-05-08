@@ -58,7 +58,7 @@ const tours = [
           caption: "Cafesjian Center of Arts"
         },
         {
-          src: "../images/The_Garni_Temple_5.jpg",
+          src: "../images/The_Garni_Temple_2.jpg",
           caption: "Garni Temple"
         }
       ]
@@ -114,27 +114,27 @@ const tours = [
       ],
         gallery: [
           {
-            src: "../images/The_Garni_Temple_5.jpg",
-            caption: "Garni Temple"
+            src: "../images/Republic_squeare.jpg",
+            caption: "Republic Square"
           },
           {
-            src: "../images/The_Garni_Temple_5.jpg",
-            caption: "Garni Temple"
+            src: "../images/History_Musiam.jpg",
+            caption: "History Musiam of Armenia"
           },
           {
-            src: "../images/The_Garni_Temple_5.jpg",
-            caption: "Garni Temple"
+            src: "../images/REP_S.jpg",
+            caption: "The Fountains Pool of Republic Square"
           },
           {
-            src: "../images/The_Garni_Temple_5.jpg",
-            caption: "Garni Temple"
+            src: "../images/Cascade-Complex.jpg",
+            caption: "Panorama View from Cascade Complex"
           },
           {
-            src: "../images/The_Garni_Temple_5.jpg",
-            caption: "Garni Temple"
+            src: "../images/Cafesjian.jpg",
+            caption: "Cafesjian Center of Arts"
           },
           {
-            src: "../images/The_Garni_Temple_5.jpg",
+            src: "../images/The_Garni_Temple_2.jpg",
             caption: "Garni Temple"
           }
         ]
@@ -208,35 +208,27 @@ const tours = [
       ],
       gallery: [
         {
-          src: "../images/The_Garni_Temple_5.jpg",
-          caption: "Garni Temple"
+          src: "../images/Republic_squeare.jpg",
+          caption: "Republic Square"
         },
         {
-          src: "../images/The_Garni_Temple_5.jpg",
-          caption: "Garni Temple"
+          src: "../images/History_Musiam.jpg",
+          caption: "History Musiam of Armenia"
         },
         {
-          src: "../images/The_Garni_Temple_5.jpg",
-          caption: "Garni Temple"
+          src: "../images/REP_S.jpg",
+          caption: "The Fountains Pool of Republic Square"
         },
         {
-          src: "../images/The_Garni_Temple_5.jpg",
-          caption: "Garni Temple"
+          src: "../images/Cascade-Complex.jpg",
+          caption: "Panorama View from Cascade Complex"
         },
         {
-          src: "../images/The_Garni_Temple_5.jpg",
-          caption: "Garni Temple"
+          src: "../images/Cafesjian.jpg",
+          caption: "Cafesjian Center of Arts"
         },
         {
-          src: "../images/The_Garni_Temple_5.jpg",
-          caption: "Garni Temple"
-        },
-        {
-          src: "../images/The_Garni_Temple_5.jpg",
-          caption: "Garni Temple"
-        },
-        {
-          src: "../images/The_Garni_Temple_5.jpg",
+          src: "../images/The_Garni_Temple_2.jpg",
           caption: "Garni Temple"
         }
       ]
