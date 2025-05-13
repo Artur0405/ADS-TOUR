@@ -135,7 +135,7 @@ footer {
   height: fit-content;
   max-height: 100%;
   overflow-y: auto;
-  background-color: rgba(234, 222, 189, 0.3);
+  background-color: rgba(168, 226, 253, 0.885);
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 20px;
@@ -162,7 +162,7 @@ footer {
 .gallery-item p {
   margin-top: 8px;
   font-size: 14px;
-  color: #ff0000;
+  color: #242424;
   text-align: center;
 }
 

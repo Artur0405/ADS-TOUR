@@ -58,9 +58,18 @@ const tours = [
           caption: "Cafesjian Center of Arts"
         },
         {
+          src: "../images/Vernisage.jpg",
+          caption: "Vernisage"
+        },
+        {
           src: "../images/The_Garni_Temple_2.jpg",
           caption: "Garni Temple"
+        },
+        {
+          src: "../images/Geghard.jpg",
+          caption: "Geghard"
         }
+        
       ]
     },
     {
